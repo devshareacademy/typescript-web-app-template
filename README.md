@@ -1,6 +1,6 @@
-# TypeScript Parcel Template
+# TypeScript Snowpack Template
 
-This is a basic TypeScript template that uses Parcel.
+A basic Typescript web app project template that uses Snowpack.
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -8,7 +8,7 @@ This is a basic TypeScript template that uses Parcel.
 
 [Node.js](https://nodejs.org) and [Yarn](https://yarnpkg.com/) are required to install dependencies and run scripts via `yarn`.
 
-[Parcel](https://parceljs.org/getting_started.html) is required to bundle and serve the web application. You can install Parcel by running the following command: `yarn global add parcel-bundler`.
+[Snowpack](https://www.snowpack.dev/) is required to bundle and serve the web application. This is included as part of the projects dev dependencies.
 
 ## Available Commands
 
@@ -30,7 +30,7 @@ by default).
 ## Deploying Code
 
 After you run the `yarn build` command, your code will be built into a single bundle located at
-`dist/bundle.min.js` along with any other assets you project depended.
+`dist/*` along with any other assets you project depended.
 
 If you put the contents of the `dist` folder in a publicly-accessible location (say something like `http://myserver.com`),
 you should be able to open `http://myserver.com/index.html` and play your game.
@@ -43,4 +43,4 @@ This template uses `typescript-eslint` for linting, and it has been setup to ext
 
 ### Static Assets
 
-Any static assets like images or audio files should be placed in the `public` folder. It'll then be served at http://localhost:8080/images/test.png
+Any static assets like images or audio files should be placed in the `public` folder. It'll then be served at `http://localhost:8080/path-to-file-your-file/file-name.file-type`.
