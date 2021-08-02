@@ -1,0 +1,30 @@
+{
+	"name": "typescript-snowpack-template",
+	"version": "0.0.1",
+	"description": "A basic Typescript web app project template that uses Snowpack.",
+	"scripts": {
+		"init:snowpack": "snowpack init",
+		"start": "snowpack dev",
+		"build": "snowpack build",
+		"lint": "eslint ./src --ext .ts,.tsx"
+	},
+	"author": "scottwestover",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/scottwestover/typescript-snowpack-template.git"
+	},
+	"homepage": "https://github.com/scottwestover/typescript-snowpack-template",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "4.28.5",
+		"@typescript-eslint/parser": "4.28.5",
+		"eslint": "7.32.0",
+		"eslint-config-airbnb-base": "14.2.1",
+		"eslint-config-airbnb-typescript": "12.3.1",
+		"eslint-plugin-import": "2.23.4",
+		"snowpack": "3.8.3",
+		"typescript": "4.3.5"
+	},
+	"dependencies": {},
+	"resolutions": {}
+}
