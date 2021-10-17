@@ -1,12 +1,13 @@
 {
-	"name": "typescript-snowpack-template",
+	"name": "@scottwestover/typescript-snowpack-template",
 	"version": "0.0.1",
 	"description": "A basic Typescript web app project template that uses Snowpack.",
 	"scripts": {
 		"init:snowpack": "snowpack init",
 		"start": "snowpack dev",
 		"build": "snowpack build",
-		"lint": "eslint ./src --ext .ts,.tsx"
+		"lint": "eslint ./src --ext .ts,.tsx",
+		"version": "auto-changelog -p && git add CHANGELOG.md"
 	},
 	"author": "scottwestover",
 	"license": "MIT",
@@ -16,15 +17,50 @@
 	},
 	"homepage": "https://github.com/scottwestover/typescript-snowpack-template",
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "4.28.5",
-		"@typescript-eslint/parser": "4.28.5",
+		"@scottwestover/eslint-config": "0.0.2",
+		"@scottwestover/prettier-config": "0.0.2",
+		"@scottwestover/tsconfig": "0.0.2",
+		"@types/jest": "27.0.1",
+		"@typescript-eslint/eslint-plugin": "4.31.0",
+		"@typescript-eslint/parser": "4.31.0",
+		"auto-changelog": "2.3.0",
 		"eslint": "7.32.0",
-		"eslint-config-airbnb-base": "14.2.1",
-		"eslint-config-airbnb-typescript": "12.3.1",
-		"eslint-plugin-import": "2.23.4",
+		"eslint-config-prettier": "8.3.0",
+		"eslint-plugin-prettier": "4.0.0",
+		"jest": "27.1.0",
+		"prettier": "2.4.0",
 		"snowpack": "3.8.3",
+		"ts-jest": "27.0.5",
 		"typescript": "4.3.5"
 	},
 	"dependencies": {},
-	"resolutions": {}
+	"resolutions": {},
+	"prettier": "@scottwestover/prettier-config",
+	"volta": {
+		"node": "16.9.0",
+		"yarn": "1.22.11"
+	},
+	"jest": {
+		"testEnvironment": "node",
+		"collectCoverageFrom": [
+			"src/**/*.ts"
+		],
+		"collectCoverage": false,
+		"coverageDirectory": "coverage",
+		"transform": {
+			"^.+\\.tsx?$": "ts-jest"
+		},
+		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+		"moduleFileExtensions": [
+			"ts",
+			"js",
+			"json",
+			"node"
+		]
+	},
+	"auto-changelog": {
+    "template": "changelog-template.hbs",
+    "unreleased": true,
+    "commitLimit": false
+	}
 }
