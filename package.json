@@ -1,6 +1,6 @@
 {
 	"name": "@scottwestover/typescript-snowpack-template",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "A basic Typescript web app project template that uses Snowpack.",
 	"scripts": {
 		"init:snowpack": "snowpack init",
