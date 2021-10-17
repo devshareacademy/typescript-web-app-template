@@ -10,6 +10,17 @@ A basic Typescript web app project template that uses Snowpack.
 
 [Snowpack](https://www.snowpack.dev/) is required to bundle and serve the web application. This is included as part of the projects dev dependencies.
 
+## Installation
+
+1. Create a [GitHub personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) to install LP packages through Yarn
+1. Clone repo and Install dependencies:
+
+   ```bash
+   yarn config set @scottwestover:registry https://npm.pkg.github.com/
+   echo "//npm.pkg.github.com/:_authToken=<github_personal_access_token>" > .npmrc
+   yarn install
+   ```
+
 ## Available Commands
 
 | Command | Description |
@@ -44,3 +55,7 @@ This template uses `typescript-eslint` for linting, and it has been setup to ext
 ### Static Assets
 
 Any static assets like images or audio files should be placed in the `public` folder. It'll then be served at `http://localhost:8080/path-to-file-your-file/file-name.file-type`.
+
+## Changelog
+
+This project uses [auto-changelog](https://github.com/CookPete/auto-changelog) for maintaining the changelog. You can view the Changelog here: [Changelog](CHANGELOG.md).
