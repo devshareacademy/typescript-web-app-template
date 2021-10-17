@@ -1,6 +1,6 @@
 {
 	"name": "@scottwestover/typescript-snowpack-template",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "A basic Typescript web app project template that uses Snowpack.",
 	"scripts": {
 		"init:snowpack": "snowpack init",
@@ -59,8 +59,8 @@
 		]
 	},
 	"auto-changelog": {
-    "template": "changelog-template.hbs",
-    "unreleased": true,
-    "commitLimit": false
+		"template": "changelog-template.hbs",
+		"unreleased": true,
+		"commitLimit": false
 	}
 }
