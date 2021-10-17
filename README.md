@@ -10,17 +10,6 @@ A basic Typescript web app project template that uses Snowpack.
 
 [Snowpack](https://www.snowpack.dev/) is required to bundle and serve the web application. This is included as part of the projects dev dependencies.
 
-## Installation
-
-1. Create a [GitHub personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) to install LP packages through Yarn
-1. Clone repo and Install dependencies:
-
-   ```bash
-   yarn config set @scottwestover:registry https://npm.pkg.github.com/
-   echo "//npm.pkg.github.com/:_authToken=<github_personal_access_token>" > .npmrc
-   yarn install
-   ```
-
 ## Available Commands
 
 | Command | Description |
