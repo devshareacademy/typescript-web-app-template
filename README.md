@@ -17,6 +17,8 @@ A basic Typescript web app project template that uses Snowpack.
 | `yarn install --frozen-lockfile` | Install project dependencies |
 | `yarn start` | Build project and open web server running project |
 | `yarn build` | Builds code bundle for production |
+| `yarn lint` | Uses ESLint to lint code |
+| `yarn version` | Updates the project version and the changelog file |
 
 ## Writing Code
 
@@ -39,7 +41,7 @@ you should be able to open `http://myserver.com/index.html` and play your game.
 
 ### ESLint
 
-This template uses `typescript-eslint` for linting, and it has been setup to extend the [airbnb](https://github.com/airbnb/javascript) style guide. To modify these settings, you will need to update the `.eslintrc.js` file with your plugins, rules, etc.
+This template uses `typescript-eslint` for linting, and it has been setup to extend the [airbnb](https://github.com/airbnb/javascript) style guide. To modify these settings, you will need to update the `./config/.eslintrc` file with your plugins, rules, etc.
 
 ### Static Assets
 

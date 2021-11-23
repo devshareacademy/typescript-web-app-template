@@ -1,8 +1,8 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    src: '/',
-    public: '/'
+    "../src": '/',
+    "../public": '/'
   },
   devOptions: {
     port: 8080

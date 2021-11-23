@@ -1,5 +1,5 @@
 {
-	"extends": "@scottwestover/tsconfig/tsconfig.json",
+	"extends": "@devshareacademy/tsconfig/tsconfig.json",
 	"compilerOptions": {
 		"outDir": "dist",
 		"types": [
