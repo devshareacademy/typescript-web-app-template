@@ -8,7 +8,7 @@ module.exports = {
     port: 8080
   },
   buildOptions: {
-    out: "dist"
+    out: "../dist"
   },
   optimize: {
     bundle: true,
