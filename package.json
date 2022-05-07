@@ -1,11 +1,11 @@
 {
-	"name": "@devshareacademy/typescript-snowpack-template",
+	"name": "@devshareacademy/typescript-web-app-template",
 	"version": "0.0.4",
-	"description": "A basic Typescript web app project template that uses Snowpack.",
+	"description": "A basic Typescript web app project template that uses Vite.",
 	"scripts": {
-		"init:snowpack": "snowpack init",
-		"start": "snowpack dev --config ./config/snowpack.config.js",
-		"build": "snowpack build --config ./config/snowpack.config.js",
+		"dev": "vite --config config/vite.config.js",
+    "build": "tsc && vite build --config config/vite.config.js",
+    "serve": "vite preview --config config/vite.config.js",
 		"lint": "eslint ./src --ext .ts,.tsx --config ./config/.eslintrc",
 		"version": "auto-changelog -p && git add CHANGELOG.md"
 	},
@@ -13,9 +13,9 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/devshareacademy/typescript-snowpack-template.git"
+		"url": "https://github.com/devshareacademy/typescript-web-app-template.git"
 	},
-	"homepage": "https://github.com/devshareacademy/typescript-snowpack-template",
+	"homepage": "https://github.com/devshareacademy/typescript-web-app-template",
 	"devDependencies": {
 		"@devshareacademy/eslint-config": "0.0.16",
 		"@devshareacademy/prettier-config": "0.0.4",
@@ -29,9 +29,9 @@
 		"eslint-plugin-prettier": "4.0.0",
 		"jest": "28.0.3",
 		"prettier": "2.6.2",
-		"snowpack": "3.8.8",
 		"ts-jest": "28.0.1",
-		"typescript": "4.6.4"
+		"typescript": "4.6.4",
+		"vite": "2.9.8"
 	},
 	"dependencies": {},
 	"resolutions": {},
