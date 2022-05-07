@@ -1,11 +1,11 @@
 {
 	"name": "@devshareacademy/typescript-web-app-template",
-	"version": "0.0.4",
+	"version": "0.1.0",
 	"description": "A basic Typescript web app project template that uses Vite.",
 	"scripts": {
 		"start": "vite --config config/vite.config.js",
-    "build": "tsc && vite build --config config/vite.config.js",
-    "serve": "vite preview --config config/vite.config.js",
+		"build": "tsc && vite build --config config/vite.config.js",
+		"serve": "vite preview --config config/vite.config.js",
 		"lint": "eslint ./src --ext .ts,.tsx --config ./config/.eslintrc",
 		"version": "auto-changelog -p && git add CHANGELOG.md"
 	},
