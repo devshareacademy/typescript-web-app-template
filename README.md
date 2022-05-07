@@ -1,6 +1,6 @@
-# TypeScript Snowpack Template
+# TypeScript Web App Template
 
-A basic Typescript web app project template that uses Snowpack.
+A basic Typescript web app project template that uses Vite.
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -8,7 +8,7 @@ A basic Typescript web app project template that uses Snowpack.
 
 [Node.js](https://nodejs.org) and [Yarn](https://yarnpkg.com/) are required to install dependencies and run scripts via `yarn`.
 
-[Snowpack](https://www.snowpack.dev/) is required to bundle and serve the web application. This is included as part of the projects dev dependencies.
+[Vite](https://vitejs.dev/) is required to bundle and serve the web application. This is included as part of the projects dev dependencies.
 
 ## Available Commands
 
