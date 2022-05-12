@@ -1,22 +1,43 @@
 {
-	"extends": "@devshareacademy/tsconfig/tsconfig.json",
 	"compilerOptions": {
-		"outDir": "dist",
-		"types": [
-			"node",
-			"jest"
-		],
+		// Specify a set of bundled library declaration files that describe the target runtime environment. https://www.typescriptlang.org/tsconfig#lib
+		"lib": ["DOM", "ES2016", "ESNext", "ScriptHost"],
+		// Set the JavaScript language version for emitted JavaScript and include compatible library declarations. https://www.typescriptlang.org/tsconfig#target
+		"target": "ESNext",
+		// Specify what module code is generated. https://www.typescriptlang.org/tsconfig#module
+		"module": "ESNext",
+		// Enable all strict type checking options. https://www.typescriptlang.org/tsconfig#strict
+		"strict": true,
+		// Disable emitting file from a compilation. https://www.typescriptlang.org/tsconfig#noEmit
+		"noEmit": false,
+		// Allow JavaScript files to be a part of your program. Use the checkJS option to get errors from these files. https://www.typescriptlang.org/tsconfig#allowJs
+		"allowJs": true,
+		// Specify what JSX code is generated.
+		"jsx": "preserve",
+		// Allow importing helper functions from tslib once per project, instead of including them per-file. https://www.typescriptlang.org/tsconfig#importHelpers
+		"importHelpers": true,
+		// https://www.typescriptlang.org/tsconfig#moduleResolution
+		"moduleResolution": "node",
+		// https://www.typescriptlang.org/tsconfig#experimentalDecorators
+		"experimentalDecorators": true,
+		// https://www.typescriptlang.org/tsconfig#esModuleInterop
+		"esModuleInterop": true,
+		// https://www.typescriptlang.org/tsconfig#allowSyntheticDefaultImports
+		"allowSyntheticDefaultImports": true,
+		// https://www.typescriptlang.org/tsconfig#strictNullChecks
+		"strictNullChecks": true,
+		// https://www.typescriptlang.org/tsconfig#sourceMap
+		"sourceMap": true,
+		// https://www.typescriptlang.org/tsconfig#typeRoots
 		"typeRoots": [
-      "node_modules/@types"
-    ]
+			"node_modules/@types"
+		],
+		// https://www.typescriptlang.org/tsconfig#types
+		"types": [],
+		// https://www.typescriptlang.org/tsconfig#outDir
+		"outDir": "dist"
 	},
 	"include": [
-		"**/*.ts",
-		"spec/**/*.ts"
-	],
-	"ts-node": {
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  }
+		"src/**/*.ts"
+	]
 }
