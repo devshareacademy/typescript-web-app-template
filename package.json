@@ -1,12 +1,12 @@
 {
 	"name": "@devshareacademy/typescript-web-app-template",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "A basic Typescript web app project template that uses Vite.",
 	"scripts": {
 		"start": "vite --config config/vite.config.js",
 		"build": "tsc && vite build --config config/vite.config.js",
 		"serve": "vite preview --config config/vite.config.js",
-		"lint": "eslint ./src --ext .ts,.tsx --config ./config/.eslintrc",
+		"lint": "eslint ./src -c ./config/eslint.config.mjs",
 		"version": "auto-changelog -p && git add CHANGELOG.md"
 	},
 	"author": "scottwestover",
@@ -17,46 +17,26 @@
 	},
 	"homepage": "https://github.com/devshareacademy/typescript-web-app-template",
 	"devDependencies": {
-		"@devshareacademy/eslint-config": "0.0.16",
-		"@devshareacademy/prettier-config": "0.0.4",
+		"@devshareacademy/eslint-config": "0.0.19",
+		"@devshareacademy/prettier-config": "0.0.6",
 		"@devshareacademy/tsconfig": "0.0.3",
-		"@types/jest": "27.5.0",
-		"@typescript-eslint/eslint-plugin": "5.22.0",
-		"@typescript-eslint/parser": "5.22.0",
+		"@typescript-eslint/eslint-plugin": "8.20.0",
+		"@typescript-eslint/parser": "8.20.0",
 		"auto-changelog": "2.4.0",
-		"eslint": "8.14.0",
-		"eslint-config-prettier": "8.5.0",
-		"eslint-plugin-prettier": "4.0.0",
-		"jest": "28.0.3",
-		"prettier": "2.6.2",
-		"ts-jest": "28.0.1",
-		"typescript": "4.6.4",
-		"vite": "2.9.16"
+		"eslint": "9.18.0",
+		"eslint-config-prettier": "10.0.1",
+		"eslint-plugin-prettier": "5.2.3",
+		"prettier": "3.4.2",
+		"typescript": "5.7.3",
+		"vite": "6.0.7"
 	},
 	"dependencies": {},
 	"resolutions": {},
 	"prettier": "@devshareacademy/prettier-config",
 	"volta": {
-		"node": "16.15.0",
-		"yarn": "1.22.11"
-	},
-	"jest": {
-		"testEnvironment": "node",
-		"collectCoverageFrom": [
-			"src/**/*.ts"
-		],
-		"collectCoverage": false,
-		"coverageDirectory": "coverage",
-		"transform": {
-			"^.+\\.tsx?$": "ts-jest"
-		},
-		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-		"moduleFileExtensions": [
-			"ts",
-			"js",
-			"json",
-			"node"
-		]
+		"node": "20.11.0",
+		"yarn": "1.22.11",
+		"pnpm": "8.14.3"
 	},
 	"auto-changelog": {
 		"template": "config/changelog-template.hbs",
