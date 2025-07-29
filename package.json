@@ -1,6 +1,6 @@
 {
 	"name": "@devshareacademy/typescript-web-app-template",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "A basic Typescript web app project template that uses Vite.",
 	"scripts": {
 		"start": "vite --config config/vite.config.js",
