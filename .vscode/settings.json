@@ -1,7 +1,7 @@
 {
   "eslint.format.enable": true,
   "eslint.options": {
-    "overrideConfigFile": "config/.eslintrc"
+    "overrideConfigFile": "config/eslint.config.mjs"
   },
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.codeActionsOnSave": {

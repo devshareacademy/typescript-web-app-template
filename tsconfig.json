@@ -2,14 +2,12 @@
 	"extends": "@devshareacademy/tsconfig/tsconfig.json",
 	"compilerOptions": {
 		"outDir": "dist",
-		"types": [],
 		"typeRoots": [
       "node_modules/@types"
     ]
 	},
 	"include": [
-		"**/*.ts",
-		"spec/**/*.ts"
+		"**/*.ts"
 	],
 	"ts-node": {
     "compilerOptions": {
